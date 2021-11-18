@@ -1,0 +1,489 @@
+ /* 页面边界删除 */
+ body{
+    margin: 0;
+}
+/* 所有的超链接 */
+a {
+    color: black;
+    text-decoration: none;
+}
+/* 头栏 */
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* 左边栏 */
+.zuo {
+    margin-top: 18.5px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.zuo a {
+    margin-right: 31px;
+    font: 13px/23px Arial,sans-serif;
+}
+
+.zuo a:hover {
+    color: blue;
+}
+
+/* 更多 */
+
+.nei {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 304px;
+    height: 223px;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.13);
+    position: relative;
+    right: 265px;
+    top: 7px;
+}
+
+.duo {
+    width: 76px;
+    height: 70px;
+    padding-top: 6px;
+    font: 13px/23px Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.duo img {
+    width: 42px;
+    height: 42px;
+}
+
+.duo p {
+    margin: 0;
+    padding-top: 4px;
+    height: 25.6px;
+}
+
+.quanBu {
+    color: #9195a3;
+    font: 13px/23px Arial,sans-serif;
+    position: relative;
+    bottom: 8px;
+}
+
+.quanBu:hover {
+    cursor:pointer;
+    color: blue;
+}
+
+.duoChang{
+    display: none;
+}
+
+.gengDuo:hover .duoChang {
+    display: block;
+}
+
+.duo:hover {
+    color: blue;
+}
+
+/* 右边栏 */
+.you {
+    margin-left: 26.3px;
+    font: 13px/23px Arial,sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-top: 18.5px;
+    padding-right: 24px;
+}
+/* 设置的选项隐藏 */
+.tao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 29px;
+    top: 7px;
+    width: 84px;
+    height: 160px;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.096);
+    background-color: white;
+}
+.xuanXiang {
+    display: none;
+}
+
+.xuanXiang a {
+    height: 28px;
+}
+
+.sheZhi:hover .xuanXiang {
+    display: block;
+}
+
+.tao a:hover {
+    color: blue;
+}
+
+/* 设置的排版 */
+.sheZhi {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.anLiu {
+    width: 26px;
+    position: relative;
+    top: 1px;
+}
+
+.anLiu:hover{
+    color: blue;
+    cursor:pointer;
+}
+
+/* 设置登录键 */
+.dengLu {
+    margin-left: 32px;
+    width: 48px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #4e71f2;
+    border-radius: 6px;
+}
+
+.dengLu a {
+    color: white;                
+}
+
+/* 设置身体 */
+
+.body {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+/* 设置log */
+.logs {
+    height: 188.396px;
+    width: 654px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log {
+    width: 270px;
+    height: 128px;
+    position: relative;
+    bottom: -15px;
+}
+
+
+/* 搜索设置 */
+.shouSuo {
+    position:relative;
+    bottom: 2px;
+}
+
+/* 设置输入框 */
+
+.shuRu {
+    padding-left: 15px;
+    width: 539px;
+    height: 37.8px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid #c4c7ce;
+    outline: none;
+    position: relative;
+    left: 10px;
+}
+
+
+/* 搜索按钮 */
+.baiDuYiXia {
+    height: 44px;
+    width: 108px;
+    background-color: #4e6ef2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    right: 9px;
+    top: 2px;
+    font-size: 17px;
+    border: #4e6ef2;
+    color: white;
+    outline: none;
+}
+
+.baiDuYiXia:hover {
+    background-color: #4662d9;
+    cursor: pointer;
+}
+
+.shuRu:hover {
+    border-color: #a7aab5;
+}
+
+.shuRu:focus {
+    border-color: #4e6ef2;
+}
+
+/* 小图标 */
+
+.tuPian {
+    background: #fff url(https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/searchbox/nicon-10750f3f7d.png) no-repeat;
+    width: 24px;
+    height: 20px;
+    background-position: 0 -51px;
+    position: absolute;
+    right: 133px;
+    top: 15px;
+    z-index: 2;
+}
+
+.tuPian:hover {
+    background-position: 0 -75px;
+}
+
+/* 百度热榜换一换 */
+.biaoTou {
+    width: 654px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 43px;
+}
+
+.baiDuReShou {
+    font: 14px/24px Arial,sans-serif;
+}
+
+.huanYiHuan {
+    color: #9195a3;
+    font: 13px/23px Arial,sans-serif;
+    cursor: pointer;
+
+}
+
+.huanYiHuan:hover {
+    color:blue;
+}
+
+/* 新闻 */
+.xinWen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 654px;
+    margin-top: 7px;
+}
+
+.reDian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reDian a {
+    width: 268px;
+    height: 32px;
+    font: 14px/24px Arial,sans-serif;
+    position: relative;
+    top: 1px;
+}
+
+/* 排列数 */
+.pai { 
+    font-size: 15px;
+    margin-right: 12px;
+    color: #9195a3;
+    position: relative;
+    bottom: 0.6px;
+}
+
+/* 最热、新、沸、爆 */
+.huoBao {
+    background-color: #d61a6e; 
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 1.5px 2px;
+    position: relative;
+    left: 8.3px;
+    bottom: 1.5px;
+    font-weight: 200;
+}
+
+.re {
+    background-color: #ff9812; 
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 1.5px 2px;
+    position: relative;
+    left: 8.3px;
+    bottom: 1.5px;
+    font-weight: 200;
+}
+
+.xin {
+    background-color: #ff455b; 
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 1.5px 2px;
+    position: relative;
+    left: 8.3px;
+    bottom: 1.5px;
+    font-weight: 200;
+}
+
+.fei {
+    background-color: #ff7413; 
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 1.5px 2px;
+    position: relative;
+    left: 8.3px;
+    bottom: 1.5px;
+    font-weight: 200;
+}
+.reDian a:hover{
+    color:blue;
+}
+
+/* 二维码 */
+.erWeiMa {
+    position: fixed;
+    bottom: 66px;
+    right: 26px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.ma {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ma div {
+    background: #fff url(https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/qrcode/qrcode@2x-daf987ad02.png);
+    background-size:24px 24px;  
+    width: 24px;
+    height: 24px;
+}
+
+.ma:hover div {
+    background: url(https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/qrcode/qrcode-hover@2x-f9b106a848.png);
+    background-size:24px 24px;  
+}
+
+.ma:hover{
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.096);;
+}
+
+.bao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    height: 110px;
+    width: 280px;
+    position: relative;
+    right: 20px;
+}
+
+.chang {
+    display: none;
+}
+
+.erWeiMa:hover .chang{
+    display: block;
+}
+
+.bao-zi {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+.bao img {
+    width: 75px;
+    height: 75px;
+}
+/* 脚标 */
+footer {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: "PingFang SC",Arial,"Microsoft YaHei",sans-serif;
+    background-color: #fbfbfb;
+}
+
+.tou {
+    padding: 0 24px;
+    width: 553.385px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wei {
+    width: 535px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tou a {
+    margin-right: 20px;
+    color: #9195a3;
+}
+
+.wei span , .wei a {
+    color: #bbb;
+    margin-right: 20px;
+}
+
+.tou a:hover , .wei a:hover {
+    color: black;
+}

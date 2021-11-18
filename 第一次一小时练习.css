@@ -1,0 +1,201 @@
+.duoChang {
+    display: none;
+}
+
+.xuanXiang {
+    display: none;
+}
+
+.chang {
+    display: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+#head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.zuo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+    margin-top: 18px;
+}
+
+.zuo>* {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.zuo>*>*:hover {
+    color: blue;
+}
+
+
+
+.you {
+    display: flex;
+    flex-direction: row;
+    margin-right: 18px;
+    margin-top: 18px;
+}
+
+.you>* {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.you>*>*:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+#body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.logs {
+    width: 654px;
+    height: 221px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.log {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+#shuRu {
+    width: 460px;
+    height: 38px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid #c4c7ce;
+    outline: none;
+    position: relative;
+    left: 4px;
+    padding-left: 20px;
+}
+
+#shuRu:hover {
+    border-color: #8b8e94;
+}
+
+#shuRu:focus {
+    border-color: #4e6ef2;
+}
+
+
+
+.baiDuYiXia {
+    width: 108px;
+    height: 44px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #4e6ef2;
+    border:#4e6ef2;
+    color: white;
+    position: relative;
+    right: 4px;
+    top: 1px;
+    outline: none;
+}
+
+.baiDuYiXia:hover {
+    background-color: #3a5ff1;
+    cursor: pointer;
+}
+
+.biaoTou {
+    width: 590px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#xinWen {
+    margin-top: 30px;
+    width: 590px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reDian {
+    display: flex;
+    flex-direction: column;
+}
+
+.reDian a {
+    width: 280px;
+    height: 30px;   
+}
+
+.reDian a:hover {
+    color: blue;
+}
+
+.pai {
+    margin-right: 10px;
+    color: #696666;
+}
+
+
+
+#tail {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#tou {
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+
+#tou>* {
+    font-size: 13px;
+    margin-right: 20px;
+    color: #696666;
+}
+
+#tou>*:hover {
+    color: black;
+}
+
+#wei {
+    margin-right: 18px;
+    margin-bottom: 18px;
+}
+
+#wei>* {
+    font-size: 13px;
+    margin-left: 20px;
+    color: #696666;
+}
+
+#wei a:hover {
+    color: black;
+}

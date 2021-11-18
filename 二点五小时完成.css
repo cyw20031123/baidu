@@ -1,0 +1,229 @@
+/* 能隐藏的都隐藏 */
+.duoChang {
+    display: none;
+}
+
+.xuanXiang {
+    display: none;
+}
+
+.chang {
+    display: none;
+}
+
+body{
+    margin: 0;
+}
+
+/* 所有超链接设置 */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 导航栏 */
+
+#head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 左边 */
+
+.zuo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+}
+
+.zuo>* {
+    margin-top: 18px;
+    margin-right: 31px;
+    font: 13px/23px Arial,sans-serif;
+}
+
+/* 右边 */
+
+.you {
+    display: flex;
+    flex-direction: row;
+    margin-right: 16px;
+}
+
+.you>* {
+    margin-top: 18px;
+    margin-left: 31px;
+    font: 13px/23px Arial,sans-serif;
+}
+
+/* 登录按钮 */
+
+.dengLu {
+    width: 48px;
+    height: 24px;
+    border-radius: 5px;
+    background-color: #4662d9;
+    text-align: center;
+}
+
+.dengLu a {
+    color: white;
+}
+
+/* 身体设置 */
+
+#body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+/* log */
+
+.logs {
+    width: 654px;
+    height: 188px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.log {
+    width: 270px;
+    height: 128px;
+    margin-bottom: 15px;
+}
+
+/* 搜索框和按钮 */
+
+#shuRu {
+    width: 539px;
+    height: 37px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: 2px solid #c4c7ce;
+    position: relative;
+    left: 6px;
+}
+
+.baiDuYiXia {
+    width: 108px;
+    height: 43px;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    outline: none;
+    color: white;
+    background-color: #4e6ef2;
+    border: none;
+    position: relative;
+    right: 6px;
+    top: 1px;
+}
+
+#shuRu:focus {
+    border-color: #4e6ef2;
+}
+
+#shuRu:hover {
+    border-color: #a7aab5;
+}
+
+.baiDuYiXia:hover {
+    background-color: #4662d9;
+    cursor: pointer;
+}
+
+/* 热榜换一换 */
+
+.biaoTou {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 654px;
+    margin-top: 40px;
+}
+
+/* 热榜 */
+
+.baiDuReShou {
+    font-size: 14px;
+}
+
+/* 换一换 */
+
+.huanYiHuan {
+    font-size: 13px;
+}
+
+/* 热点新闻 */
+
+#xinWen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 654px;
+    margin-top: 15px;
+}
+
+.reDian {
+    display: flex;
+    flex-direction: column;
+}
+
+.reDian>* {
+    font-size: 14px;
+    width: 268px;
+    height: 32px;
+}
+
+/* 排序 */
+
+.pai {
+    color: #cccccc;
+    margin-right: 5px;
+}
+
+/* 底栏 */
+
+#tail {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 左边底栏 */
+
+#tou {
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+
+#tou>* {
+    color: #77797e;
+    font-size: 10px;
+    margin-right: 18px;
+}
+
+/* 右边底栏 */
+
+#wei {
+    margin-bottom: 12px;
+    margin-right: 20px;
+}
+
+#wei>* {
+    color: #77797e;
+    font-size: 8px;
+    margin-left: 18px;
+}
